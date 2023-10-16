@@ -7,7 +7,7 @@ export default function MultiLayout({ settings, children }) {
   return (
     <>
       <SkipLink />
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen " style={{ flexWrap: "wrap"}}>
         {(!settings ||
           settings.type === "free" ||
           (settings.type === "premium" && !settings.hideNavbar)) && (
